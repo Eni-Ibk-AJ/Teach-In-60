@@ -50,7 +50,7 @@ src/
 Clone the repository:
 
 ```bash
-git clone https://github.com//teach-me-60s.git
+git clone  https://github.com/Eni-Ibk-AJ/Teach-In-60.git
 ```
 
 Navigate into the project:
