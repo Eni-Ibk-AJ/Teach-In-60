@@ -1,0 +1,205 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(248, 250, 252, 0.85);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  transition: background var(--transition);
+}
+
+[data-theme="dark"] .navbar {
+  background: rgba(15, 23, 42, 0.85);
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 800;
+  font-size: 1.1rem;
+  color: var(--text-primary);
+  flex-shrink: 0;
+}
+
+.logoIcon {
+  width: 36px;
+  height: 36px;
+  background: linear-gradient(135deg, var(--primary), var(--primary-hover));
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1rem;
+}
+
+[data-theme="dark"] .logoIcon {
+  color: var(--bg);
+}
+
+.navLinks {
+  display: none;
+  align-items: center;
+  gap: 8px;
+}
+
+.navLink {
+  padding: 8px 14px;
+  border-radius: var(--radius-full);
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.navLink:hover,
+.active {
+  color: var(--primary);
+  background: var(--bg);
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.authBtn {
+  padding: 8px 18px;
+  border-radius: var(--radius-full);
+  font-size: 0.875rem;
+  font-weight: 600;
+  transition: all 0.2s;
+  border: none;
+}
+
+.loginBtn {
+  background: transparent;
+  color: var(--text-primary);
+}
+
+.loginBtn:hover {
+  color: var(--primary);
+}
+
+.signupBtn {
+  background: var(--primary);
+  color: white;
+}
+
+.signupBtn:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow);
+}
+
+[data-theme="dark"] .signupBtn {
+  color: var(--bg);
+}
+
+.avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-full);
+  border: 2px solid var(--primary);
+  object-fit: cover;
+}
+
+.menuBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--card);
+  color: var(--text-primary);
+  font-size: 1.2rem;
+}
+
+.mobileMenu {
+  display: flex;
+  flex-direction: column;
+  padding: 12px 20px 20px;
+  border-top: 1px solid var(--border);
+  animation: fadeInUp 0.25s ease;
+}
+
+.mobileLink {
+  padding: 12px 0;
+  color: var(--text-secondary);
+  font-weight: 500;
+  border-bottom: 1px solid var(--border);
+}
+
+.mobileLink:last-child {
+  border-bottom: none;
+}
+
+@media (min-width: 768px) {
+  .navLinks {
+    display: flex;
+  }
+
+  .menuBtn {
+    display: none;
+  }
+
+  .mobileMenu {
+    display: none;
+  }
+}
+
+.dashboardNav {
+  background: var(--card);
+}
+
+.dashboardInner {
+  max-width: 1400px;
+}
+
+.searchArea {
+  flex: 1;
+  max-width: 400px;
+  display: none;
+}
+
+.notifBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-full);
+  background: var(--card);
+  color: var(--text-secondary);
+  position: relative;
+}
+
+.notifDot {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 8px;
+  height: 8px;
+  background: var(--incorrect);
+  border-radius: 50%;
+}
+
+@media (min-width: 768px) {
+  .searchArea {
+    display: block;
+  }
+}

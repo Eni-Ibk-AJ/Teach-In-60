@@ -1,0 +1,198 @@
+[
+  {
+    "id": 1,
+    "topic": "AI",
+    "title": "What is Artificial Intelligence?",
+    "description": "Discover how machines simulate human intelligence.",
+    "mediaType": "text",
+    "text": "Artificial Intelligence (AI) enables computers to perform tasks that normally require human intelligence — recognizing patterns, understanding language, and making decisions. From voice assistants to recommendation engines, AI is already woven into everyday life.",
+    "durationSec": 45,
+    "quiz": {
+      "question": "AI is designed to simulate what?",
+      "options": ["Computer storage", "Human intelligence", "Internet speed", "Screen brightness"],
+      "correctIndex": 1
+    }
+  },
+  {
+    "id": 2,
+    "topic": "Programming",
+    "title": "React Components Explained",
+    "description": "The building blocks of every React application.",
+    "mediaType": "video",
+    "videoUrl": "https://www.youtube.com/embed/wIyHSOugGGw",
+    "durationSec": 60,
+    "quiz": {
+      "question": "React applications are built using?",
+      "options": ["Databases", "Servers", "Components", "Networks"],
+      "correctIndex": 2
+    }
+  },
+  {
+    "id": 3,
+    "topic": "Business",
+    "title": "What is Entrepreneurship?",
+    "description": "Turn ideas into value for customers.",
+    "mediaType": "text",
+    "text": "Entrepreneurship is the process of identifying opportunities, creating value, and building businesses that solve real problems. Great entrepreneurs combine vision, resilience, and customer empathy.",
+    "durationSec": 50,
+    "quiz": {
+      "question": "Entrepreneurs primarily create?",
+      "options": ["Value through solutions", "More taxes", "Computer viruses", "Traffic laws"],
+      "correctIndex": 0
+    }
+  },
+  {
+    "id": 4,
+    "topic": "Science",
+    "title": "Photosynthesis in 60 Seconds",
+    "description": "How plants convert sunlight into energy.",
+    "mediaType": "video",
+    "videoUrl": "https://www.youtube.com/embed/upVenjwf-YU",
+    "durationSec": 55,
+    "quiz": {
+      "question": "Photosynthesis primarily occurs in which part of a plant?",
+      "options": ["Roots", "Leaves", "Stem", "Flowers"],
+      "correctIndex": 1
+    }
+  },
+  {
+    "id": 5,
+    "topic": "History",
+    "title": "The Fall of the Roman Empire",
+    "description": "Key factors behind Rome's decline.",
+    "mediaType": "text",
+    "text": "The Western Roman Empire fell in 476 CE after centuries of expansion. Contributing factors included political instability, economic troubles, military overreach, and barbarian invasions — a complex mix rather than a single cause.",
+    "durationSec": 58,
+    "quiz": {
+      "question": "When did the Western Roman Empire traditionally fall?",
+      "options": ["1066 CE", "476 CE", "1492 CE", "1776 CE"],
+      "correctIndex": 1
+    }
+  },
+  {
+    "id": 6,
+    "topic": "Mathematics",
+    "title": "The Pythagorean Theorem",
+    "description": "a² + b² = c² — geometry's most famous equation.",
+    "mediaType": "text",
+    "text": "In a right triangle, the square of the hypotenuse equals the sum of squares of the other two sides: a² + b² = c². Named after Pythagoras, this theorem is foundational in geometry, construction, and navigation.",
+    "durationSec": 42,
+    "quiz": {
+      "question": "In a right triangle, c represents the?",
+      "options": ["Shortest side", "Right angle", "Hypotenuse", "Area"],
+      "correctIndex": 2
+    }
+  },
+  {
+    "id": 7,
+    "topic": "Languages",
+    "title": "Spanish Greetings 101",
+    "description": "Essential phrases to start any conversation.",
+    "mediaType": "text",
+    "text": "Hola (Hello), Buenos días (Good morning), Buenas tardes (Good afternoon), Buenas noches (Good evening/night). ¿Cómo estás? means 'How are you?' — reply with ¡Muy bien, gracias! (Very well, thank you!).",
+    "durationSec": 40,
+    "quiz": {
+      "question": "What does 'Buenos días' mean?",
+      "options": ["Good night", "Good morning", "Goodbye", "Thank you"],
+      "correctIndex": 1
+    }
+  },
+  {
+    "id": 8,
+    "topic": "Programming",
+    "title": "Variables in JavaScript",
+    "description": "Store and reuse data in your code.",
+    "mediaType": "text",
+    "text": "Variables store information your program uses later. JavaScript uses let (block-scoped, reassignable), const (block-scoped, constant), and var (function-scoped, legacy). Prefer const by default, let when reassignment is needed.",
+    "durationSec": 48,
+    "quiz": {
+      "question": "Which keyword creates a block-scoped variable?",
+      "options": ["goto", "print", "let", "select"],
+      "correctIndex": 2
+    }
+  },
+  {
+    "id": 9,
+    "topic": "AI",
+    "title": "Machine Learning Basics",
+    "description": "How computers learn from data.",
+    "mediaType": "video",
+    "videoUrl": "https://www.youtube.com/embed/ukzFI9rgwfU",
+    "durationSec": 58,
+    "quiz": {
+      "question": "Machine learning improves by learning from?",
+      "options": ["Luck", "Electricity", "Printers", "Data"],
+      "correctIndex": 3
+    }
+  },
+  {
+    "id": 10,
+    "topic": "Science",
+    "title": "Newton's Laws of Motion",
+    "description": "Three rules that govern all movement.",
+    "mediaType": "video",
+    "videoUrl": "https://www.youtube.com/embed/kKKM8Y-u7ds",
+    "durationSec": 60,
+    "quiz": {
+      "question": "Newton's First Law is also known as the law of?",
+      "options": ["Gravity", "Inertia", "Acceleration", "Friction"],
+      "correctIndex": 1
+    }
+  },
+  {
+    "id": 11,
+    "topic": "Business",
+    "title": "Personal Finance Basics",
+    "description": "Budget, save, and grow your money.",
+    "mediaType": "text",
+    "text": "Budgeting tracks income and expenses so you can reach financial goals. The 50/30/20 rule suggests 50% needs, 30% wants, and 20% savings. Start an emergency fund covering 3–6 months of expenses.",
+    "durationSec": 46,
+    "quiz": {
+      "question": "A budget helps you?",
+      "options": ["Charge your phone", "Manage income and expenses", "Browse the internet", "Write software"],
+      "correctIndex": 1
+    }
+  },
+  {
+    "id": 12,
+    "topic": "History",
+    "title": "The Industrial Revolution",
+    "description": "When machines changed the world forever.",
+    "mediaType": "video",
+    "videoUrl": "https://www.youtube.com/embed/DV3dQ4HkIdc",
+    "durationSec": 55,
+    "quiz": {
+      "question": "The Industrial Revolution began in which country?",
+      "options": ["France", "Germany", "England", "United States"],
+      "correctIndex": 2
+    }
+  },
+  {
+    "id": 13,
+    "topic": "Mathematics",
+    "title": "Understanding Percentages",
+    "description": "Quick mental math for everyday life.",
+    "mediaType": "text",
+    "text": "A percentage is a fraction of 100. To find 20% of 50: multiply 50 × 0.20 = 10. To calculate a tip, move the decimal one place left (10%) and double it for 20%. Percentages appear in discounts, taxes, and statistics daily.",
+    "durationSec": 44,
+    "quiz": {
+      "question": "What is 25% of 80?",
+      "options": ["15", "20", "25", "30"],
+      "correctIndex": 1
+    }
+  },
+  {
+    "id": 14,
+    "topic": "Languages",
+    "title": "French Essentials",
+    "description": "Bonjour! Start speaking French today.",
+    "mediaType": "video",
+    "videoUrl": "https://www.youtube.com/embed/Vq3h9jL_GhM",
+    "durationSec": 52,
+    "quiz": {
+      "question": "How do you say 'Thank you' in French?",
+      "options": ["Bonjour", "Merci", "Au revoir", "S'il vous plaît"],
+      "correctIndex": 1
+    }
+  }
+]

@@ -1,0 +1,371 @@
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero {
+  padding: 60px 20px 80px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.heroContent {
+  animation: fadeInUp 0.6s ease;
+}
+
+.headline {
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  font-weight: 800;
+  line-height: 1.15;
+  margin: 0 0 20px;
+  background: linear-gradient(135deg, var(--text-primary) 30%, var(--primary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin: 0 0 32px;
+  max-width: 520px;
+}
+
+.ctaGroup {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.primaryBtn {
+  padding: 14px 32px;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: var(--radius-full);
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.25s;
+  position: relative;
+  overflow: hidden;
+}
+
+.primaryBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.secondaryBtn {
+  padding: 14px 32px;
+  background: transparent;
+  color: var(--text-primary);
+  border: 2px solid var(--border);
+  border-radius: var(--radius-full);
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.25s;
+}
+
+.secondaryBtn:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+[data-theme="dark"] .primaryBtn {
+  color: var(--bg);
+}
+
+.heroIllustration {
+  position: relative;
+  height: 320px;
+  border-radius: var(--radius);
+  background: linear-gradient(135deg, var(--primary) 0%, #818CF8 50%, #C084FC 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: scaleIn 0.6s ease 0.2s both;
+  overflow: hidden;
+}
+
+.heroIllustration::before {
+  content: '';
+  position: absolute;
+  inset: 20px;
+  border: 2px dashed rgba(255,255,255,0.3);
+  border-radius: calc(var(--radius) - 8px);
+}
+
+.phoneMock {
+  width: 180px;
+  height: 280px;
+  background: var(--card);
+  border-radius: 24px;
+  box-shadow: var(--shadow-lg);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  z-index: 1;
+}
+
+.mockBar {
+  height: 6px;
+  background: var(--border);
+  border-radius: 3px;
+}
+
+.mockCard {
+  flex: 1;
+  background: var(--bg);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+.section {
+  padding: 80px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sectionAlt {
+  background: var(--card);
+  border-radius: var(--radius);
+  margin: 0 20px;
+  padding: 80px 40px;
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  font-weight: 800;
+  text-align: center;
+  margin: 0 0 12px;
+}
+
+.sectionSubtitle {
+  text-align: center;
+  color: var(--text-secondary);
+  margin: 0 0 48px;
+  max-width: 560px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.featuresGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+.featureCard {
+  padding: 28px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  transition: all 0.3s;
+}
+
+.sectionAlt .featureCard {
+  background: var(--bg);
+}
+
+.featureCard:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--primary);
+}
+
+.featureIcon {
+  width: 48px;
+  height: 48px;
+  background: var(--primary);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  margin-bottom: 16px;
+  color: white;
+}
+
+[data-theme="dark"] .featureIcon {
+  color: var(--bg);
+}
+
+.featureTitle {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0 0 8px;
+}
+
+.featureDesc {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.topicsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.topicCard {
+  padding: 24px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  text-align: center;
+  transition: all 0.3s;
+  cursor: default;
+}
+
+.topicCard:hover {
+  border-color: var(--primary);
+  transform: scale(1.03);
+}
+
+.topicEmoji {
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.topicName {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+  counter-reset: step;
+}
+
+.step {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.stepNum {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  background: var(--primary);
+  color: white;
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1.1rem;
+}
+
+[data-theme="dark"] .stepNum {
+  color: var(--bg);
+}
+
+.stepTitle {
+  font-weight: 700;
+  margin: 0 0 6px;
+}
+
+.stepDesc {
+  color: var(--text-secondary);
+  margin: 0;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.testimonials {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+.testimonial {
+  padding: 28px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  transition: transform 0.3s;
+}
+
+.testimonial:hover {
+  transform: translateY(-3px);
+}
+
+.stars {
+  color: var(--review);
+  margin-bottom: 12px;
+  font-size: 1rem;
+}
+
+.quote {
+  font-style: italic;
+  line-height: 1.7;
+  margin: 0 0 16px;
+  color: var(--text-primary);
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.authorAvatar {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-full);
+  background: linear-gradient(135deg, var(--primary), #818CF8);
+}
+
+.authorName {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.authorRole {
+  color: var(--text-secondary);
+  font-size: 0.8rem;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    grid-template-columns: 1fr 1fr;
+    padding: 80px 40px 100px;
+  }
+
+  .featuresGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .topicsGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .steps {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .testimonials {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .heroIllustration {
+    height: 400px;
+  }
+}
