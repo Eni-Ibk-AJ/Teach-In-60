@@ -1,46 +1,107 @@
-# Getting Started with Create React App
+# Teach Me in 60 Seconds
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern microlearning platform inspired by short-form content experiences, designed to help users learn new concepts in 60 seconds or less. Users can swipe through bite-sized lessons, take quick quizzes, bookmark content, and explore topics in an engaging, mobile-first interface.
 
-## Available Scripts
+## ✨ Features
 
-In the project directory, you can run:
+- 📱 TikTok-style vertical swipe feed
+- 🎥 Video and text-based lessons
+- ⏱️ 60-second learning sessions
+- 🧠 Interactive mini quizzes with instant feedback
+- 🔖 Bookmark lessons for later
+- 🏷️ Filter lessons by topic
+- 🌙 Dark and Light mode
+- 👤 Mock authentication (frontend only)
+- 📊 User profile with learning statistics
+- 📱 Fully responsive design
 
-### `npm start`
+## 🛠️ Built With
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- React
+- React Router
+- Context API
+- CSS Modules
+- Local Storage
+- React Icons
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## 📂 Project Structure
 
-### `npm test`
+```
+src/
+├── components/
+├── context/
+├── cssComponents/
+├── data/
+├── hooks/
+├── pages/
+├── styles/
+└── utils/
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🚀 Getting Started
 
-### `npm run build`
+### Prerequisites
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Node.js
+- npm
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Clone the repository:
 
-### `npm run eject`
+```bash
+git clone https://github.com//teach-me-60s.git
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Navigate into the project:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+cd teach-me-60s
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Install dependencies:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```bash
+npm install
+```
 
-## Learn More
+Start the development server:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+npm start
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Open **http://localhost:3000** to view the application in your browser.
+
+## 📖 Demo Authentication
+
+This project currently uses **mock authentication** for demonstration purposes.
+
+You can sign up with any valid email address or log in using any valid email format. User information is stored locally in the browser using Local Storage—no backend or database is required.
+
+## 🎯 Learning Objectives
+
+This project demonstrates:
+
+- Mobile-first UI design
+- Short-form educational content patterns
+- React component architecture
+- State management using Context API
+- Local storage persistence
+- Responsive layouts
+- Modern UI/UX principles
+
+## 📌 Future Improvements
+
+- Backend authentication
+- Creator lesson uploads
+- AI-generated lesson summaries
+- Learning streaks
+- Progress synchronization
+- User-generated content
+- Social sharing
+- Lesson recommendations
+
+## 📄 License
+
+This project was created as part of an internship project and is intended for educational purposes.
