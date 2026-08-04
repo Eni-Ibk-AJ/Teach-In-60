@@ -39,11 +39,6 @@ export default function Profile() {
 
       <main className={styles.main}>
         <header className={styles.profileHeader}>
-          <img
-            src={user?.avatar || 'https://api.dicebear.com/7.x/avataaars/svg?seed=guest'}
-            alt=""
-            className={styles.avatar}
-          />
           <div>
             <h1 className={styles.name}>{user?.name || 'Guest Learner'}</h1>
             <p className={styles.email}>{user?.email || 'Not signed in'}</p>
